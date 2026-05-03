@@ -1,1 +1,39 @@
 @import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-text: rgb(30, 30, 30, 0.9);
+    --color-text-d: rgb(0, 0, 0);
+    --color-text-l: rgba(0, 0, 0, 0.6);
+
+    --color-background: rgb(244, 244, 244);
+
+    --color-primary: #009678;
+    --color-primary-l: rgb(25 167 138 / 45%);
+    
+    --color-selection: rgba(0, 150, 120, 0.2);
+
+    --font-sans: "Montserrat", sans-serif;
+
+}
+
+.dark {
+    --color-text: rgba(229, 229, 229, 0.9);
+    --color-text-d: rgba(255, 255, 255, 0.8);
+    --color-text-l: rgba(255, 255, 255, 0.6);
+
+    --color-background: rgb(15, 15, 15);
+
+    --color-primary: #3ab59c;
+    --color-primary-l: rgb(47 212 179 / 60%);
+
+    --color-selection: rgba(65, 254, 216, 0.2);
+
+}
+
+@layer base {
+    body {
+        @apply bg-zinc-950 text-gray-100;
+    }
+}
