@@ -12,11 +12,10 @@
 
         <input type="email" placeholder="Email" class="text-sm w-full p-2.5 rounded-md border border-zinc-700 bg-zinc-900 text-white focus:outline-none focus:border-sky-400 "/>
         <input type="password" placeholder="Password" class="text-sm w-full p-2.5 rounded-md border border-zinc-700 bg-zinc-900 text-white focus:outline-none focus:border-sky-400 "/>
-        <input type="password" placeholder="Confirm Password" class="text-sm w-full p-2.5 rounded-md border border-zinc-700 bg-zinc-900 text-white focus:outline-none focus:border-sky-400"/>
 
-        <button class="font-medium bg-sky-600 w-full p-2.5 hover:bg-sky-700 text-sm rounded-md cursor-pointer">Sign Up</button>
+        <button class="font-medium bg-sky-600 w-full p-2.5 hover:bg-sky-700 text-sm rounded-md cursor-pointer">Log In</button>
 
-        <div class="text-sm text-zinc-400 font-medium">Already have an account? <a href="/login" class="text-zinc-200 hover:underline cursor-pointer">Log in</a></div>
+        <div class="text-sm text-zinc-400 font-medium">Don't have an account? <a href="/signup" class="text-zinc-200 hover:underline cursor-pointer">Sign up</a></div>
     </form>
 </div>
 
