@@ -1,6 +1,17 @@
 <script>
+    import { goto } from "$app/navigation";
+    import { authState } from "$lib/authStore.svelte";
+    import { onMount } from "svelte";
 
+    $effect(()=>{
+        // Redirect to dashboard if user is already logged in
+        if (authState.user) {
+            goto("/dashboard");
+        }
+    })
 </script>
+
+{#if authState.isInitialized && !authState.user}
 
 <div class="h-screen p-6 flex items-center w-5xl mx-auto justify-between">
     
@@ -28,3 +39,5 @@
         </form>
     </div>
 </div>
+
+{/if}
